@@ -8,10 +8,20 @@ font-family: 'Work Sans', sans-serif;
 
 
 }
-body{
-    width: 1920px;
-height: 1322px;
+.text-gray{
+    color:  #727272;
+   
+    font-size: 1rem;
+    font-weight: 400;
 }
+.section-title{
+    color:  #131313;
+font-size: 2.8rem;
+font-weight: 700;
+margin-bottom: 10px;
+}
+
+
 .btn-primary{
     border: none;
     border-radius: 8px;
@@ -81,15 +91,120 @@ text-align: center;
  
 }
 
-
-
-
 .hero-image{
     width: 100%;
     padding-bottom: 50px;
 }
+
+
 /* quick list section */
+main{
+    max-width: 1400px;
+    margin: 0px auto;
+}
+
 .quick-list-section{
+    display: flex;
     
 }
 
+.image-collage{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 35px;
+}
+.image-collage img{
+    width: 100%;
+}
+.quick-content{
+    margin-left: 76px;
+    margin-top: 200px;
+}
+
+.quick-list-title{
+    color:  #727272;
+font-size: 3rem;
+font-weight: 500;
+margin-bottom: 24px;
+}
+.bold-text{
+    color:  #131313;
+    font-weight: 700;
+}
+.text-orange{
+    color: #FF900E;
+    font-weight: 700;
+}
+.quick-description{
+    color:#727272;
+    font-size: 1rem;
+   
+    margin-bottom: 32px;
+}
+
+
+
+/* facts seection */
+.fact-card-section{
+    display: flex;
+    justify-content: space-around;
+    margin: 50px;
+}
+
+.fact-card-section .card{
+    border-radius: 8px;
+border: 1px solid #FF900E;
+text-align: center;
+padding: 30px;
+margin-top: 100px;
+}
+.fact-card-section .card-qty{
+    color:  #424242;
+font-size: 45px;
+font-weight: 600;
+margin: 0;
+}
+
+.fact-card-section .card-title{
+}
+
+
+/* sponsors section  */
+.sponsor{
+    text-align: center;
+}
+.sponsors-img-container{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 40px;
+}
+
+.sponsors-img-container img{
+    width: 165.833px;
+}
+/* media query for small device */
+@media screen and (max-width:576px){
+    .header{
+        padding: 0px;
+    }
+    .banner-content{
+        margin: 0px;
+    }
+    .image-collage{
+        grid-template-columns: repeat(1,1fr);
+        
+    }
+    .quick-content{
+        margin: 5px;
+    }
+    .nav,
+    .quick-list-section,
+    .fact-card-section,
+    .sponsors-img-container
+    {
+        flex-direction: column;
+    }
+    
+}
